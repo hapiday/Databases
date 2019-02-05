@@ -1,0 +1,48 @@
+What data types do each of these values represent?
+
+"A Clockwork Orange"- string
+
+42- integers
+
+09/02/1945-dates
+
+98.7- float
+
+$15.99-numeric price
+
+Explain when a database would be used. Explain when a text file would be used.
+-When we need to store data that makes it easy to search for specific data, that can handle multiple applications accessing the data, and persists beyond the end of a particular application process. A text file would be used when the file has only text and is void of images and other non-text characters. Text files are the basis for more advanced file formats. HTML, XML, CSV and many other formats are text files with additional formatting added.
+
+Describe one difference between SQL and other programming languages.
+-SQL is a declarative rather than a procedural language. We tell the database what we are looking for and the database engine determines the most efficient way to return that data.
+
+In your own words, explain how the pieces of a database system fit together at a high level.
+-Databases display data using a table structure with columns that define what the data represents and rows that make up a complete conceptual unit. The power of the database lies in the ability to query and manipulate the data.
+
+Explain the meaning of table, row, column, and value.
+-table:where records/data are laid out in
+-row:individual parts of the data
+-column:labeled according to what is stored there
+-value: some piece of information that the column name describes.
+
+List three data types that can be used in a table.
+-dates, numeric values, objects
+
+Given this payments table, provide an English description of the following queries and include their results:
+-I am looking for the date and amount of the payments
+-I am looking for the amount of the payments that were greater than $500
+-I am looking for all the info on the table related to the payments made by the payee Mega Foods
+
+Given this users table, write SQL queries using the following criteria and include the output:
+The email and sign-up date for the user named DeAndre Data.
+  -  SELECT email, sign-up
+     FROM user;
+     WHERE name = 'DeAndrew Data';
+The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+  -  SELECT userID
+     FROM user;
+     WHERE email: 'aleesia.algorithm@uw.edu';
+All the columns for the user ID equal to 4.
+  -SELECT *
+   FROM users;
+   WHERE userId = 4;
