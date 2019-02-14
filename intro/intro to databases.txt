@@ -31,7 +31,7 @@ List three data types that can be used in a table.
 Given this payments table, provide an English description of the following queries and include their results:
 -I am looking for the date and amount of the payments
 -I am looking for the amount of the payments that were greater than $500
--I am looking for all the info on the table related to the payments made by the payee Mega Foods
+-I am looking for all the info on the table related to the payments made by the payee Mega Foods.
 
 Given this users table, write SQL queries using the following criteria and include the output:
 The email and sign-up date for the user named DeAndre Data.
