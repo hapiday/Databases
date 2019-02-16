@@ -8,7 +8,7 @@ What data types do each of these values represent?
 
 98.7- float
 
-$15.99-numeric price
+$15.99-decimal
 
 Explain when a database would be used. Explain when a text file would be used.
 -When we need to store data that makes it easy to search for specific data, that can handle multiple applications accessing the data, and persists beyond the end of a particular application process. A text file would be used when the file has only text and is void of images and other non-text characters. Text files are the basis for more advanced file formats. HTML, XML, CSV and many other formats are text files with additional formatting added.
@@ -38,11 +38,22 @@ The email and sign-up date for the user named DeAndre Data.
   -  SELECT email, sign-up
      FROM user;
      WHERE name = 'DeAndrew Data';
+
+     output:name	signup
+     DeAndre Data	2008-01-20T00:00:00.000Z
+
 The user ID for the user with email 'aleesia.algorithm@uw.edu'.
   -  SELECT userID
      FROM user;
      WHERE email: 'aleesia.algorithm@uw.edu';
+
+     output:userid
+            1
+
 All the columns for the user ID equal to 4.
-  -SELECT *
-   FROM users;
-   WHERE userId = 4;
+   -SELECT *
+    FROM users;
+    WHERE userId = 4;
+
+    output: userid	name	email	signup
+           4	Brandy Boolean	bboolean@nasa.gov	1999-10-15T00:00:00.000Z
